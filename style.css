@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: 'Kanit', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+body {
+    background-image: url('solid-color-image.png');
+
+}
+
+.container-grid {
+/*     height: 95%; */
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(auto, 10rem));
+    /* background-image: url(celebrate.gif); */
+    background-position: center;
+    background-size: 300px;
+}
+
+.box {
+    aspect-ratio: 1/1;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    outline: none;
+  
+}
+
+#b-0-0 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+
+}
+
+#b-0-1 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+#b-0-2 {
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+#b-1-0 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+#b-1-1 {
+    border: 3px solid black;
+}
+
+#b-1-2 {
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+#b-2-0 {
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+}
+
+#b-2-1 {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#b-2-2 {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+.rst, .output {
+    height: 32px;
+    width: 72px;
+    padding: 4px 10px 5px 10px;
+    margin-left: 50px;
+    background-color: #00ADB5;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+    display: inline;
+    font-size: 20px;
+    border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.output{
+  margin-left:10px;
+}
+.rst:hover {
+    background-color: #02bdc7;
+}
+.container{
+height: 95vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.end {
+    height: auto;
+    width: auto;
+    padding: 0px 30px;
+    font-weight: bold;
+  float: right;
+}
